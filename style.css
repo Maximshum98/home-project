@@ -1,0 +1,231 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html, body {
+    font-family: 'Rubik' , sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+.header {
+    padding: 14px 0;
+    background-color: #0a61f7;
+}
+
+.menu-link{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #fff;
+    }
+
+.main-title {
+    font-weight: 500;
+    font-size: 58px;
+    line-height: 68px;
+    color: #363940;
+    margin-top: 30px;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #95a1bb;
+}
+
+.button {
+    border-radius: 4px;
+    width: 152px;
+    height: 50px;
+    background-color: #0a61f7;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    }
+
+    .main-img {
+        border-radius: 10px 10px 0 0;
+        width: 656px;
+        height: 650px;
+    }
+
+    .rates-section {
+    padding: 100px 0;
+    background-color: #f9fafc;
+    }
+
+    .rates-section .title {
+        margin-bottom: 20px;
+    }
+
+    ..rates-section .text {
+        margin-bottom: 40px;
+    }
+
+    .title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.34375;
+    text-align: center;
+    color: #363940;
+    }
+
+    .table {
+        border-collapse: collapse;
+    }
+
+    th, td {
+        border: 1px solid #95a1bb;
+        width: 241px;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    .table-title {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22222;
+        color: #363940;
+    }
+
+    .table-submit {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.57143;
+        color: #363940;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .table-link {
+        color: #0a61f7;
+    }
+
+    .table-button {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.63333;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        padding: 8px 0;
+        border-radius: 4px;
+        width: 140px;
+        color: #0a61f7;
+        border: 1px solid #0a61f7;
+    }
+
+    .table-submit.gray {
+        color: #95a1bb;
+    }
+
+    .table-button.active {
+        background-color: #0a61f7;
+        color: #fff;
+    }
+
+    .table-footer td {
+        padding: 30px 0;
+    }
+
+    .create-account-section {
+        padding: 100px 0 ;
+    }
+
+    .create-account-section .title {
+        margin-bottom: 50px;
+    }
+
+    .create-account-section .text {
+        margin-bottom: 40px;
+        max-width: 500px;
+    }
+
+    .list-item {
+        list-style-image: url(./assets/images/Check.svg);
+        margin-left: 30px;
+        margin-bottom: 15px;
+        color: #363940;
+    }
+
+    input, select, fieldset, textarea, label, legend, input::placeholder, select::placeholder, textarea::placeholder {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.4;
+        color: #95a1bb;
+        font-family: inherit;
+    }
+
+    input, select, fieldset, textarea {
+        border: 1px solid #95a1bb;
+        border-radius: 4px;
+        padding: 14px 15px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+    input[type="email"], input[type="password"], input[type="date"], select {
+        width: 230px;
+        height: 50px;
+    }
+
+    fieldset {
+        width: 100%;
+        padding: 30px 15px;
+    }
+
+    textarea {
+        width: 100%;
+        min-height: 80px;
+        resize: none;
+    }
+
+    form .button {
+        width: 100%;
+    }
+
+    select {
+        background: url(./assets/images/Arrow-down.svg) no-repeat right 15px top 50%;
+        appearance: none;
+    }
+
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        background: url(./assets/images/Calendar.svg) no-repeat;
+    }
+
+    .footer {
+        background-color: #0a61f7;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    small {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.57143;
+    text-align: center;
+    color: #fff;
+    }
+
