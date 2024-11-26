@@ -12,8 +12,17 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 ul {
     list-style: none;
+}
+
+.menu {
+    display: flex;
+    gap: 24px;
 }
 
 button {
@@ -24,6 +33,21 @@ button {
 .header {
     padding: 14px 0;
     background-color: #0a61f7;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    max-width: 1170px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .menu-link{
@@ -62,17 +86,42 @@ button {
     text-transform: uppercase;
     text-align: center;
     color: #fff;
+    cursor: pointer;
+    transition: .2s;
+    }
+
+    button:hover {
+        transform: translateY(-5px);
     }
 
     .main-img {
         border-radius: 10px 10px 0 0;
         width: 656px;
         height: 650px;
+        align-self: flex-end;
+    }
+
+    .main .text {
+        margin-bottom: 40px;
+        max-width: 380px;
+    }
+
+    .main-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 800px;
     }
 
     .rates-section {
-    padding: 100px 0;
-    background-color: #f9fafc;
+        padding: 100px 0;
+        background-color: #f9fafc;
+    }
+
+    .rates-wrapper {
+        display: flex;
+            flex-direction: column;
+            align-items: center;
     }
 
     .rates-section .title {
@@ -152,6 +201,11 @@ button {
         padding: 100px 0 ;
     }
 
+    .account-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
     .create-account-section .title {
         margin-bottom: 50px;
     }
@@ -168,12 +222,26 @@ button {
         color: #363940;
     }
 
+    form {
+        width: 100%;
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
     input, select, fieldset, textarea, label, legend, input::placeholder, select::placeholder, textarea::placeholder {
         font-weight: 400;
         font-size: 16px;
         line-height: 1.4;
         color: #95a1bb;
         font-family: inherit;
+    }
+
+    .fields-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
     }
 
     input, select, fieldset, textarea {
@@ -189,6 +257,16 @@ button {
     input[type="email"], input[type="password"], input[type="date"], select {
         width: 230px;
         height: 50px;
+        flex-grow: 1;
+    }
+
+    input[type="radio"], input[type="checkbox"], input[type="date"], select {
+        cursor: pointer;
+    }
+
+    .stack, fieldset {
+        display: flex;
+        column-gap: 30px;
     }
 
     fieldset {
