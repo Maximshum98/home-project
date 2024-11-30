@@ -5,7 +5,8 @@
 }
 html, body {
     font-family: 'Rubik' , sans-serif;
-
+    font-style: normal;
+    min-width: 375px;
 }
 
 a {
@@ -59,6 +60,10 @@ button {
     color: #fff;
     }
 
+    .menu-icon {
+        display: none;
+    }
+
 .main-title {
     font-weight: 500;
     font-size: 58px;
@@ -106,11 +111,17 @@ button {
         max-width: 380px;
     }
 
+    .main-img {
+        align-self: flex-end;
+        max-width: 656px;
+        width: 100%;
+    }
+
     .main-wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 800px;
+        min-height: 800px;
     }
 
     .rates-section {
@@ -130,6 +141,7 @@ button {
 
     .rates-section .text {
         margin-bottom: 40px;
+        text-align: center;
     }
 
     .title {
@@ -307,3 +319,78 @@ button {
     color: #fff;
     }
 
+
+    /* Адаптив под планшет */
+
+    @media screen and (max-width: 1400px) {
+        .main-wrapper {
+            flex-direction: column;
+            min-height: auto;
+        }
+        
+        .main-info {
+            align-self: flex-start;
+            margin: 100px 0 80px;
+        }
+
+        .main-img {
+            align-self: center;
+        }
+
+        .table {
+            width: 940px;
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+            width: 100%;
+            max-width: 940px;
+        }
+
+        .account-wrapper {
+            flex-direction: column;
+            gap: 70px;
+        }
+
+        .create-account-section {
+            max-width: unset;
+        }
+
+        form {
+            align-self: center;
+        }
+    }
+
+        /* Адаптив для мобилок */
+
+        @media screen and (max-width: 576px) {
+            .menu {
+                display: none;
+            }
+
+            .menu-icon {
+                display: block;
+            }
+
+            .main-info {
+                margin: 60px 0;
+            }
+
+            .main-title {
+                font-size: 52px;
+                line-height: 60px;
+            }
+
+            .account-wrapper {
+                gap: 60px;
+            }
+
+            label {
+                white-space: nowrap;
+            }
+
+            fieldset {
+                flex-wrap: wrap;
+                row-gap: 20px;
+            }
+        }
